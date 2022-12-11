@@ -19,9 +19,9 @@ const AppTask2 = () => {
 
    const cambiarImg = (event) => {
       if(event.target.src.includes('recesvinto')){
-         alert('recesvinto');
+         event.target.src = img02;
       }else{
-         alert('NO ES recesvinto');
+         event.target.src = img01;
       }
    }
 

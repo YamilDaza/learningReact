@@ -8,9 +8,9 @@ const MainTaks = () => {
    return (
       <div>
          {/* <App></App> */}
-         {/* <AppTask2></AppTask2> */}
-         {/* <MyTask2></MyTask2> */}
-         <MyTask3></MyTask3>
+         <AppTask2></AppTask2>
+         {/* <MyTask2></MyTask2  */}
+         {/* <MyTask3></MyTask3> */}
       </div>
    );
 }
