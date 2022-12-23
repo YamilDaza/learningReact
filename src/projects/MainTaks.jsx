@@ -7,6 +7,7 @@ import Counter from './Task3/Counter';
 import MyTask from './Task3/myTas3Dos/MyTask';
 import ConvertidorDivisas from './Task3/myTask3/ConvertidorDivisas';
 import Sumador from './Task3/Sumador';
+import MainTask4 from './Task4/MainTask4';
 // import App from './Task1/App';
 
 const MainTaks = () => {
@@ -20,7 +21,8 @@ const MainTaks = () => {
          {/* <Counter/> */}
          {/* <Sumador></Sumador> */}
          {/* <ConvertidorDivisas></ConvertidorDivisas> */}
-         <MyTask></MyTask>
+         {/* <MyTask></MyTask> */}
+         <MainTask4></MainTask4>
       </div>
    );
 }
