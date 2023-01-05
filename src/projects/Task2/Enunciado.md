@@ -8,6 +8,7 @@
 
 # Tips ->
    - Cuando apretamos la imagen y ejecutamos el e.target.src, nos devuelve el contenido de la img el nombre - la ruta, ahora podemos usar includes para saber cual es y asi cambiarlo -> e.target.src.includes('recesvinto')....
+   - Cuando usamos useRef, tenemos que usar current.textContent o innerHTML, etc.
 
 # Notas Use Ref:
    *EJEMPLO 1:*
