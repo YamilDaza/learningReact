@@ -35,7 +35,7 @@ const Lenguaje = ({ data, img }) => {
   );
 };
 
-const App = () => {
+const App2 = () => {
   return (
     <div className="App">
       <Lenguaje data={lenguajes[0]} img={html} />
@@ -45,4 +45,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App2;
