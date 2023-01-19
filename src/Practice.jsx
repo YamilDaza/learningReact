@@ -1,4 +1,5 @@
-import React from 'react';
+// Practice Part1
+/* import React from 'react';
 
 const data = [
    {
@@ -55,6 +56,40 @@ const Practice = ({ children }) => {
 
 
 
+
+export default Practice; */
+
+
+
+
+
+
+
+// Practice Part2
+import React, { useRef } from 'react';
+
+const Practice = () => {
+   const myParraf = useRef();
+   const contentParraf = useRef();
+
+   function lector(e){
+      contentParraf.current.innerHTML = e.target.value;
+   }
+
+   return(
+      <>
+         <h1>UseRef</h1>
+         <div>
+            <h2 ref={myParraf}>Good evening, Nice to meet you. I am Yamil daza and I work developer Full stack</h2>
+            <button onClick={() => console.log(myParraf.current.textContent)}>Info</button>
+            <section>
+               <div ref={contentParraf}></div>
+               <input type='string' onChange={lector}/>
+            </section>
+         </div>
+      </>
+   )
+}
 
 export default Practice;
 
