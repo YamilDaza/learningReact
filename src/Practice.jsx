@@ -54,9 +54,6 @@ const Practice = ({ children }) => {
    );
 }
 
-
-
-
 export default Practice; */
 
 
@@ -66,7 +63,7 @@ export default Practice; */
 
 
 // Practice Part2
-import React, { useRef } from 'react';
+/* import React, { useRef } from 'react';
 
 const Practice = () => {
    const myParraf = useRef();
@@ -91,6 +88,50 @@ const Practice = () => {
    )
 }
 
+export default Practice; */
+
+
+
+
+// Practice Part3
+import React,{ useState } from 'react';
+
+const Practice = () => {
+
+   const [numberOne, setNumberOne] = useState();
+   const [numberTwo, setNumberTwo] = useState();
+   const [resultAdd, setResultAdd] = useState(0);
+
+   function toAddNUmbers(){
+      setResultAdd(Number(numberOne) + Number(numberTwo));
+   }
+
+   const getValueOne = (e) => setNumberOne(e.target.value);
+   const getValueTwo = (e) => setNumberTwo(e.target.value);
+   
+
+   return(
+      <>
+         <h1>Calculator</h1>
+         <div>
+            <h3>enter the values to add:</h3>
+            <input value={numberOne} onChange={getValueOne} type='number' /> + 
+            <input value={numberTwo} onChange={getValueTwo} type='number'/> =
+            <input value={resultAdd} type='number' readOnly/>
+            <button onClick={toAddNUmbers}>Calculate</button>
+         </div>
+      </>
+   )
+}
+
 export default Practice;
+
+
+
+
+
+
+
+
 
 
